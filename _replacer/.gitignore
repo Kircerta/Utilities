@@ -1,0 +1,23 @@
+# --- macOS / Swift / Xcode ---
+*.xcodeproj
+!*.xcprojectdata/
+!*.xcprojectdata/xcworkspacedata/
+!*.xcprojectdata/xcschemes/
+*.xcschememanagement.plist
+*.xworkspace/
+!*.worskpace/contents.xcworkspacedata
+
+# Swift Package Manager
+.build/
+Packages/
+
+# Xcode build files
+DerivedData/
+Build/
+
+# macOS files
+.DS_Store
+
+# User-specific settings
+*.xcuserdatad
+*.private

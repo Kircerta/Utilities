@@ -1,0 +1,14 @@
+.DS_Store
+DerivedData/
+build/
+.build/
+*.xcuserdata/
+*.xcuserstate
+.swiftpm/
+*.app
+*.dmg
+*.zip
+__pycache__/
+.venv/
+venv/
+dist/
