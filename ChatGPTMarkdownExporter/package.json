@@ -1,0 +1,10 @@
+{
+  "name": "chatgpt-markdown-exporter",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Manifest V3 Chrome extension that exports ChatGPT conversations to tidy Markdown.",
+  "scripts": {
+    "assemble": "node scripts/assemble-large-files.js",
+    "scan:remote-code": "node scripts/remote-code-scan.js"
+  }
+}

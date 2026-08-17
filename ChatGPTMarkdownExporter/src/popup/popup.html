@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT Markdown Exporter</title>
+    <style>
+      body { width: 250px; margin: 0; padding: 14px; font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #111; background: #fff; }
+      button { width: 100%; min-height: 36px; border: 1px solid #111; border-radius: 8px; background: #111; color: #fff; font-weight: 600; cursor: pointer; }
+      button:disabled { opacity: .55; cursor: wait; }
+      #status { min-height: 18px; margin-top: 10px; color: #555; }
+    </style>
+  </head>
+  <body>
+    <button id="export-current-chat" type="button">Export current chat</button>
+    <div id="status" aria-live="polite">Ready</div>
+    <script src="popup.js"></script>
+  </body>
+</html>

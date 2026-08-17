@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Markdown Exporter",
+  "version": "0.3.0",
+  "description": "Export the currently open ChatGPT conversation as a tidy local Markdown file.",
+  "permissions": ["activeTab"],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "vendor/turndown.js",
+        "src/export/table-to-markdown.js",
+        "src/export/sanitize.js",
+        "src/export/markdown-renderer.js",
+        "src/export/chatgpt-adapter.js",
+        "src/content/chatgpt-content.js"
+      ],
+      "css": ["src/content/chatgpt-button.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  }
+}
